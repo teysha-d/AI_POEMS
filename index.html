@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -11,39 +12,35 @@
       <header>
         <h1>AI POEM GENERATOR</h1>
       </header>
+
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem...."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/teysha-d" target="_blank">Teysha Darden</a>
+        and is
+        <a href="hhttps://github.com/teysha-d/AI_POEMS" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://ai-poems-shecodes-project.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
     </div>
-
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem...."
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="poem">
-        In the quiet of the night,
-        <br />
-        The stars tell their secrets.
-      </div>
-    </main>
-
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/teysha-d" target="_blank">Teysha Darden</a>
-      and is
-      <a href="hhttps://github.com/teysha-d/AI_POEMS" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-poems-shecodes-project.netlify.app" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
 
     <script src="src/index.js"></script>
   </body>
